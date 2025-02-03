@@ -1,0 +1,62 @@
+FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType\DetalleSurtidoAType\LineaDetalleSurtidoAType\ImpuestoSurtidoAType:
+    properties:
+        codigoImpuestoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoImpuestoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoImpuestoSurtido
+                setter: setCodigoImpuestoSurtido
+            type: string
+        codigoImpuestoOTROSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoImpuestoOTROSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoImpuestoOTROSurtido
+                setter: setCodigoImpuestoOTROSurtido
+            type: string
+        codigoTarifaIVASurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoTarifaIVASurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoTarifaIVASurtido
+                setter: setCodigoTarifaIVASurtido
+            type: string
+        tarifaSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: TarifaSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTarifaSurtido
+                setter: setTarifaSurtido
+            type: float
+        datosImpuestoEspecificoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: DatosImpuestoEspecificoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getDatosImpuestoEspecificoSurtido
+                setter: setDatosImpuestoEspecificoSurtido
+            type: FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType\DetalleSurtidoAType\LineaDetalleSurtidoAType\ImpuestoSurtidoAType\DatosImpuestoEspecificoSurtidoAType
+        montoImpuestoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: MontoImpuestoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getMontoImpuestoSurtido
+                setter: setMontoImpuestoSurtido
+            type: float

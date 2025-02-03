@@ -1,0 +1,82 @@
+FacturaElectronica\ImpuestoType:
+    properties:
+        codigo:
+            expose: true
+            access_type: public_method
+            serialized_name: Codigo
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigo
+                setter: setCodigo
+            type: string
+        codigoImpuestoOTRO:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoImpuestoOTRO
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoImpuestoOTRO
+                setter: setCodigoImpuestoOTRO
+            type: string
+        codigoTarifaIVA:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoTarifaIVA
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoTarifaIVA
+                setter: setCodigoTarifaIVA
+            type: string
+        tarifa:
+            expose: true
+            access_type: public_method
+            serialized_name: Tarifa
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTarifa
+                setter: setTarifa
+            type: float
+        factorCalculoIVA:
+            expose: true
+            access_type: public_method
+            serialized_name: FactorCalculoIVA
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getFactorCalculoIVA
+                setter: setFactorCalculoIVA
+            type: float
+        datosImpuestoEspecifico:
+            expose: true
+            access_type: public_method
+            serialized_name: DatosImpuestoEspecifico
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getDatosImpuestoEspecifico
+                setter: setDatosImpuestoEspecifico
+            type: FacturaElectronica\ImpuestoType\DatosImpuestoEspecificoAType
+        monto:
+            expose: true
+            access_type: public_method
+            serialized_name: Monto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getMonto
+                setter: setMonto
+            type: float
+        exoneracion:
+            expose: true
+            access_type: public_method
+            serialized_name: Exoneracion
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getExoneracion
+                setter: setExoneracion
+            type: FacturaElectronica\ExoneracionType

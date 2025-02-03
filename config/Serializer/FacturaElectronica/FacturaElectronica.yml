@@ -1,0 +1,190 @@
+FacturaElectronica\FacturaElectronica:
+    xml_root_name: FacturaElectronica
+    xml_root_namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+    xml_namespaces:
+        xsd: 'http://www.w3.org/2001/XMLSchema'
+        xsi: 'http://www.w3.org/2001/XMLSchema-instance'
+    properties:
+        clave:
+            expose: true
+            access_type: public_method
+            serialized_name: Clave
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getClave
+                setter: setClave
+            type: string
+        proveedorSistemas:
+            expose: true
+            access_type: public_method
+            serialized_name: ProveedorSistemas
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getProveedorSistemas
+                setter: setProveedorSistemas
+            type: string
+        codigoActividadEmisor:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoActividadEmisor
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoActividadEmisor
+                setter: setCodigoActividadEmisor
+            type: string
+        codigoActividadReceptor:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoActividadReceptor
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoActividadReceptor
+                setter: setCodigoActividadReceptor
+            type: string
+        numeroConsecutivo:
+            expose: true
+            access_type: public_method
+            serialized_name: NumeroConsecutivo
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getNumeroConsecutivo
+                setter: setNumeroConsecutivo
+            type: string
+        fechaEmision:
+            expose: true
+            access_type: public_method
+            serialized_name: FechaEmision
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getFechaEmision
+                setter: setFechaEmision
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        emisor:
+            expose: true
+            access_type: public_method
+            serialized_name: Emisor
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getEmisor
+                setter: setEmisor
+            type: FacturaElectronica\EmisorType
+        receptor:
+            expose: true
+            access_type: public_method
+            serialized_name: Receptor
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getReceptor
+                setter: setReceptor
+            type: FacturaElectronica\ReceptorType
+        condicionVenta:
+            expose: true
+            access_type: public_method
+            serialized_name: CondicionVenta
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCondicionVenta
+                setter: setCondicionVenta
+            type: string
+        condicionVentaOtros:
+            expose: true
+            access_type: public_method
+            serialized_name: CondicionVentaOtros
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCondicionVentaOtros
+                setter: setCondicionVentaOtros
+            type: string
+        plazoCredito:
+            expose: true
+            access_type: public_method
+            serialized_name: PlazoCredito
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getPlazoCredito
+                setter: setPlazoCredito
+            type: integer
+        detalleServicio:
+            expose: true
+            access_type: public_method
+            serialized_name: DetalleServicio
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getDetalleServicio
+                setter: setDetalleServicio
+            type: array<FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType>
+            xml_list:
+                inline: false
+                skip_when_empty: true
+                entry_name: LineaDetalle
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+        otrosCargos:
+            expose: true
+            access_type: public_method
+            serialized_name: OtrosCargos
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getOtrosCargos
+                setter: setOtrosCargos
+            xml_list:
+                inline: true
+                entry_name: OtrosCargos
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            type: array<FacturaElectronica\OtrosCargosType>
+        resumenFactura:
+            expose: true
+            access_type: public_method
+            serialized_name: ResumenFactura
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getResumenFactura
+                setter: setResumenFactura
+            type: FacturaElectronica\FacturaElectronica\ResumenFacturaAType
+        informacionReferencia:
+            expose: true
+            access_type: public_method
+            serialized_name: InformacionReferencia
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getInformacionReferencia
+                setter: setInformacionReferencia
+            xml_list:
+                inline: true
+                entry_name: InformacionReferencia
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            type: array<FacturaElectronica\FacturaElectronica\InformacionReferenciaAType>
+        otros:
+            expose: true
+            access_type: public_method
+            serialized_name: Otros
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getOtros
+                setter: setOtros
+            type: FacturaElectronica\FacturaElectronica\OtrosAType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                namespace: 'http://www.w3.org/2000/09/xmldsig#'
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: XmlDsig\Signature

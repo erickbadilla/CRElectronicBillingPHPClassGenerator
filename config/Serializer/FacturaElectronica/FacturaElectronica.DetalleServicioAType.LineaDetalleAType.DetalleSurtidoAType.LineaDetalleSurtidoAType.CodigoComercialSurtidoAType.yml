@@ -1,0 +1,22 @@
+FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType\DetalleSurtidoAType\LineaDetalleSurtidoAType\CodigoComercialSurtidoAType:
+    properties:
+        tipoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: TipoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTipoSurtido
+                setter: setTipoSurtido
+            type: string
+        codigoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoSurtido
+                setter: setCodigoSurtido
+            type: string

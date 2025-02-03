@@ -1,0 +1,32 @@
+FacturaElectronica\FacturaElectronica\ResumenFacturaAType\TotalDesgloseImpuestoAType:
+    properties:
+        codigo:
+            expose: true
+            access_type: public_method
+            serialized_name: Codigo
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigo
+                setter: setCodigo
+            type: string
+        codigoTarifaIVA:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoTarifaIVA
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoTarifaIVA
+                setter: setCodigoTarifaIVA
+            type: string
+        totalMontoImpuesto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalMontoImpuesto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalMontoImpuesto
+                setter: setTotalMontoImpuesto
+            type: float

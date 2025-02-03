@@ -1,0 +1,5 @@
+vendor
+/classes/FacturaElectronica/
+/classes/XmlDsig/
+/.idea
+.DS_Store

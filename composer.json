@@ -1,0 +1,25 @@
+{
+    "require": {
+        "goetas/xsd2php": "^2.1",
+        "doctrine/inflector": "^1.4",
+        "jms/serializer": "^1.2.0",
+        "jms/metadata": "^1.7",
+        "goetas-webservices/xsd2php-runtime": "^0.2.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "FacturaElectronica\\": "classes/FacturaElectronica/",
+            "XmlDsig\\": "classes/XmlDsig/"
+        }
+    },
+    "scripts": {
+        "generate-schema:V4_4": [
+            "vendor/bin/xsd2php convert:php --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica;FacturaElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;XmlDsig\\\\\" --ns-dest \"FacturaElectronica\\\\;classes/FacturaElectronica/\" --ns-dest \"XmlDsig\\\\;classes/XmlDsig/\" schemas/V4_4/FacturaElectronica_V4.4.xsd schemas/common/xmldsig-core-schema.xsd",
+            "vendor/bin/xsd2php convert:jms-yaml --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica;FacturaElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;XmlDsig\\\\\" --ns-dest \"FacturaElectronica\\\\;config/serializer/FacturaElectronica/\" --ns-dest \"XmlDsig\\\\;config/serializer/XmlDsig/\" schemas/V4_4/FacturaElectronica_V4.4.xsd schemas/common/xmldsig-core-schema.xsd"
+        ],
+        "generate-schema:V4_3": [
+            "vendor/bin/xsd2php convert:php --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronica;FacturaElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;XmlDsig\\\\\" --ns-dest \"FacturaElectronica\\\\;classes/FacturaElectronica/\" --ns-dest \"XmlDsig\\\\;classes/XmlDsig/\" schemas/V4_3/FacturaElectronica_V4.3.xsd schemas/common/xmldsig-core-schema.xsd",
+            "vendor/bin/xsd2php convert:jms-yaml --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronica;FacturaElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;XmlDsig\\\\\" --ns-dest \"FacturaElectronica\\\\;config/serializer/FacturaElectronica/\" --ns-dest \"XmlDsig\\\\;config/serializer/XmlDsig/\" schemas/V4_3/FacturaElectronica_V4.3.xsd schemas/common/xmldsig-core-schema.xsd"
+        ]
+    }
+}

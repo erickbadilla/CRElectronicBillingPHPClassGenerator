@@ -1,0 +1,240 @@
+FacturaElectronica\FacturaElectronica\ResumenFacturaAType:
+    properties:
+        codigoTipoMoneda:
+            expose: true
+            access_type: public_method
+            serialized_name: CodigoTipoMoneda
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCodigoTipoMoneda
+                setter: setCodigoTipoMoneda
+            type: FacturaElectronica\CodigoMonedaType
+        totalServGravados:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalServGravados
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalServGravados
+                setter: setTotalServGravados
+            type: float
+        totalServExentos:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalServExentos
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalServExentos
+                setter: setTotalServExentos
+            type: float
+        totalServExonerado:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalServExonerado
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalServExonerado
+                setter: setTotalServExonerado
+            type: float
+        totalServNoSujeto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalServNoSujeto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalServNoSujeto
+                setter: setTotalServNoSujeto
+            type: float
+        totalMercanciasGravadas:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalMercanciasGravadas
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalMercanciasGravadas
+                setter: setTotalMercanciasGravadas
+            type: float
+        totalMercanciasExentas:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalMercanciasExentas
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalMercanciasExentas
+                setter: setTotalMercanciasExentas
+            type: float
+        totalMercExonerada:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalMercExonerada
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalMercExonerada
+                setter: setTotalMercExonerada
+            type: float
+        totalMercNoSujeta:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalMercNoSujeta
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalMercNoSujeta
+                setter: setTotalMercNoSujeta
+            type: float
+        totalGravado:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalGravado
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalGravado
+                setter: setTotalGravado
+            type: float
+        totalExento:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalExento
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalExento
+                setter: setTotalExento
+            type: float
+        totalExonerado:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalExonerado
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalExonerado
+                setter: setTotalExonerado
+            type: float
+        totalNoSujeto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalNoSujeto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalNoSujeto
+                setter: setTotalNoSujeto
+            type: float
+        totalVenta:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalVenta
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalVenta
+                setter: setTotalVenta
+            type: float
+        totalDescuentos:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalDescuentos
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalDescuentos
+                setter: setTotalDescuentos
+            type: float
+        totalVentaNeta:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalVentaNeta
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalVentaNeta
+                setter: setTotalVentaNeta
+            type: float
+        totalDesgloseImpuesto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalDesgloseImpuesto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalDesgloseImpuesto
+                setter: setTotalDesgloseImpuesto
+            xml_list:
+                inline: true
+                entry_name: TotalDesgloseImpuesto
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            type: array<FacturaElectronica\FacturaElectronica\ResumenFacturaAType\TotalDesgloseImpuestoAType>
+        totalImpuesto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalImpuesto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalImpuesto
+                setter: setTotalImpuesto
+            type: float
+        totalImpAsumEmisorFabrica:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalImpAsumEmisorFabrica
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalImpAsumEmisorFabrica
+                setter: setTotalImpAsumEmisorFabrica
+            type: float
+        totalIVADevuelto:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalIVADevuelto
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalIVADevuelto
+                setter: setTotalIVADevuelto
+            type: float
+        totalOtrosCargos:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalOtrosCargos
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalOtrosCargos
+                setter: setTotalOtrosCargos
+            type: float
+        medioPago:
+            expose: true
+            access_type: public_method
+            serialized_name: MedioPago
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getMedioPago
+                setter: setMedioPago
+            xml_list:
+                inline: true
+                entry_name: MedioPago
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            type: array<FacturaElectronica\FacturaElectronica\ResumenFacturaAType\MedioPagoAType>
+        totalComprobante:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalComprobante
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getTotalComprobante
+                setter: setTotalComprobante
+            type: float

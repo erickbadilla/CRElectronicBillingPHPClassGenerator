@@ -1,0 +1,52 @@
+FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType\DetalleSurtidoAType\LineaDetalleSurtidoAType\ImpuestoSurtidoAType\DatosImpuestoEspecificoSurtidoAType:
+    properties:
+        cantidadUnidadMedidaSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: CantidadUnidadMedidaSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getCantidadUnidadMedidaSurtido
+                setter: setCantidadUnidadMedidaSurtido
+            type: float
+        porcentajeSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: PorcentajeSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getPorcentajeSurtido
+                setter: setPorcentajeSurtido
+            type: float
+        proporcionSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: ProporcionSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getProporcionSurtido
+                setter: setProporcionSurtido
+            type: float
+        volumenUnidadConsumoSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: VolumenUnidadConsumoSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getVolumenUnidadConsumoSurtido
+                setter: setVolumenUnidadConsumoSurtido
+            type: float
+        impuestoUnidadSurtido:
+            expose: true
+            access_type: public_method
+            serialized_name: ImpuestoUnidadSurtido
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getImpuestoUnidadSurtido
+                setter: setImpuestoUnidadSurtido
+            type: float

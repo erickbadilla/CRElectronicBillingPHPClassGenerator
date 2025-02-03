@@ -1,0 +1,16 @@
+FacturaElectronica\FacturaElectronica\DetalleServicioAType:
+    properties:
+        lineaDetalle:
+            expose: true
+            access_type: public_method
+            serialized_name: LineaDetalle
+            xml_element:
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            accessor:
+                getter: getLineaDetalle
+                setter: setLineaDetalle
+            xml_list:
+                inline: true
+                entry_name: LineaDetalle
+                namespace: 'https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica'
+            type: array<FacturaElectronica\FacturaElectronica\DetalleServicioAType\LineaDetalleAType>
