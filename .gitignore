@@ -1,5 +1,6 @@
 vendor
-/classes/FacturaElectronica/
-/classes/XmlDsig/
+/V4_4/Classes/*
+/V4_4/Config/Serializer/*
+
 /.idea
 .DS_Store
