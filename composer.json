@@ -1,16 +1,11 @@
 {
     "require": {
+        "php": ">=7.0 <8.0",
         "goetas/xsd2php": "^2.1",
         "doctrine/inflector": "^1.4",
         "jms/serializer": "^3.32.2",
         "jms/metadata": "^2.8.0",
         "goetas-webservices/xsd2php-runtime": "^0.2.17"
-    },
-    "autoload": {
-        "psr-4": {
-            "FacturaElectronica\\": "classes/FacturaElectronica/",
-            "XmlDsig\\": "classes/XmlDsig/"
-        }
     },
     "scripts": {
         "generate-schema:MensajeHacienda:V4_4": [
@@ -32,6 +27,14 @@
         "generate-schema:NotaDebito:V4_4": [
             "vendor/bin/xsd2php convert:php --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/notaDebitoElectronica;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\NotaDebitoElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\NotaDebitoElectronica\\\\;V4_4/Classes/NotaDebitoElectronica/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Classes/XmlDsig/\" Schemas/V4_4/NotaDebitoElectronica_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd",
             "vendor/bin/xsd2php convert:jms-yaml --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/notaDebitoElectronica;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\NotaDebitoElectronica\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\NotaDebitoElectronica\\\\;V4_4/Config/Serializer/NotaDebitoElectronica/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Config/Serializer/XmlDsig/\" Schemas/V4_4/NotaDebitoElectronica_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd"
+        ],
+        "generate-schema:MensajeReceptorV4_4": [
+            "vendor/bin/xsd2php convert:php --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/mensajeReceptor;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\MensajeReceptor\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\MensajeReceptor\\\\;V4_4/Classes/MensajeReceptor/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Classes/XmlDsig/\" Schemas/V4_4/MensajeReceptor_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd",
+            "vendor/bin/xsd2php convert:jms-yaml --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/mensajeReceptor;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\MensajeReceptor\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\MensajeReceptor\\\\;V4_4/Config/Serializer/MensajeReceptor/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Config/Serializer/XmlDsig/\" Schemas/V4_4/MensajeReceptor_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd"
+        ],
+        "generate-schema:FacturaCompra:V4_4": [
+            "vendor/bin/xsd2php convert:php --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronicaCompra;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\FacturaElectronicaCompra\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\FacturaElectronicaCompra\\\\;V4_4/Classes/FacturaElectronicaCompra/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Classes/XmlDsig/\" Schemas/V4_4/FacturaElectronicaCompra_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd",
+            "vendor/bin/xsd2php convert:jms-yaml --ns-map \"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronicaCompra;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\FacturaElectronicaCompra\\\\\" --ns-map \"http://www.w3.org/2000/09/xmldsig#;CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\FacturaElectronicaCompra\\\\;V4_4/Config/Serializer/FacturaElectronicaCompra/\" --ns-dest \"CR\\\\ElectronicReceipt\\\\V4_4\\\\Classes\\\\XmlDsig\\\\;V4_4/Config/Serializer/XmlDsig/\" Schemas/V4_4/FacturaElectronicaCompra_V4.4.xsd Schemas/common/xmldsig-core-schema.xsd"
         ]
     }
 }
